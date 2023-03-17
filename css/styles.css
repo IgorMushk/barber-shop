@@ -3,3 +3,30 @@ font-family: 'Open Sans', sans-serif;
 }
 
 /* font-family: 'Raleway', sans-serif; */
+
+/* eCSStractor for VSCode */
+.header {
+}
+.header-navigation {
+}
+.header-logo {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+.header-phone {
+}
+.header-btn {
+}
