@@ -1,21 +1,22 @@
 body {
-font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  /*letter-spacing: 0.1em;*/ /* + Mod2-1*/
 }
 
 /* font-family: 'Raleway', sans-serif; */
 
 /*  list temp  */
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* eCSStractor for VSCode */
 .header {
-    background-color: gray;
+  background-color: gray;
 }
 .header-navigation {
 }
@@ -26,18 +27,46 @@ font-family: 'Open Sans', sans-serif;
 .header-item {
 }
 .header-link {
-/* font-family: 'Open Sans'; */
-/* font-style: normal; */
-font-weight: 600;
-font-size: 12px;
-/* line-height: 16px; */
-line-height: 1.33;
-letter-spacing: 0.1em;
+  /* font-family: 'Open Sans'; */
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  /* line-height: 16px; */
+  line-height: 1.33; /* */
+  letter-spacing: 0.1em;
 
-color: #FFFFFF;
-
+  color: #ffffff;
 }
+
+.header-link:hover,
+.header-link:focus {
+  color: #ff6c00;
+}
+/* .header-link:is(:hover,:focus) {
+  color: #ff6c00;
+} */
+/* .header-link:focus {
+  color: #ff6c00;
+} */
+
 .header-phone {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /*16px */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 .header-btn {
+  /*font-family: "Open Sans", sans-serif;*/ /* + sans-serif */
+  font-family: inherit;
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /* 16px */
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
