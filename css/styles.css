@@ -4,8 +4,18 @@ font-family: 'Open Sans', sans-serif;
 
 /* font-family: 'Raleway', sans-serif; */
 
+/*  list temp  */
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
 /* eCSStractor for VSCode */
 .header {
+    background-color: gray;
 }
 .header-navigation {
 }
@@ -16,11 +26,12 @@ font-family: 'Open Sans', sans-serif;
 .header-item {
 }
 .header-link {
-font-family: 'Open Sans';
-font-style: normal;
+/* font-family: 'Open Sans'; */
+/* font-style: normal; */
 font-weight: 600;
 font-size: 12px;
-line-height: 16px;
+/* line-height: 16px; */
+line-height: 1.33;
 letter-spacing: 0.1em;
 
 color: #FFFFFF;
