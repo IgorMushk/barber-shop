@@ -1,6 +1,36 @@
 :root {
   --main-title-color: #ffffff;
   --second-tittle-color: #303030;
+
+  --main-btn-color: #ffffff;
+  --second-btn-color: #303030;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
 }
 
 body {
@@ -13,6 +43,18 @@ body {
 /*  list temp  */
 .list {
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px; /*1170px*/
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline:  2px solid red;
 }
 
 /* for example styles buttom without color*/
@@ -41,6 +83,11 @@ body {
   text-transform: uppercase;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* --------- HEADER ----------------------------------------- */
 
 .link {
@@ -50,6 +97,7 @@ body {
 /* eCSStractor for VSCode */
 .header {
   background-color: gray;
+  padding-top: 32px;
 }
 .header-navigation {
 }
@@ -136,6 +184,8 @@ body {
   line-height: 1.36; /* 15px */
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  
+  margin-bottom: 20px;
 }
 .hero-title {
   font-family: "Raleway", sans-serif; /*+ sans-serif */
@@ -145,7 +195,10 @@ body {
   line-height: 1.18; /*85px*/
   letter-spacing: 0.05em;
   color: var(--main-title-color, #ffffff); /* color: #ffffff; */
+
+  margin-bottom: 20px;
 }
+
 .hero-botton-text {
   /* font-weight: 400; */
   font-size: 18px;
@@ -156,8 +209,11 @@ body {
 
 /* --------- ABOUT ----------------------------------------- */
 
-.about {
-}
+/* .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+} */
+
 .about-list {
 }
 /* .list {
@@ -213,6 +269,9 @@ body {
 
 .prices {
   background-color: #303030;
+
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
 }
 .prices-top-text {
   font-weight: 600;
