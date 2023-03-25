@@ -54,11 +54,14 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline:  2px solid red;
+  outline: 2px solid red;
 }
 
 /* for example styles buttom without color*/
 .btn {
+  min-width: 160px;
+  height: 40px;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -67,6 +70,10 @@ body {
   text-transform: uppercase;
   /* color: #ffffff; */
   cursor: pointer;
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
 }
 
 .title {
@@ -99,14 +106,42 @@ body {
   background-color: gray;
   padding-top: 32px;
 }
+
+/* .header .container {} */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
+
 .header-logo {
+  margin-right: 130px;
 }
+
 .header-list {
+  display: flex;
+  gap: 30px;
 }
-.header-item {
+
+/* gap: 30px;  in .header-list */
+/* .header-item {
+  margin-right: 30px;
 }
+.header-item:last-child {
+  margin-right: 0;
+}  */
+
+/* так проблема */
+/* .header-item:not(:last-child) {
+  margin-right: 30px;
+  background-color: tomato;
+} */
+
 .header-link {
   /* font-family: 'Open Sans'; */
   /* font-style: normal; */
@@ -137,6 +172,8 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
+
+  margin-right: 44px;
 }
 
 /* UP .btn for example styles buttom without color*/
@@ -156,9 +193,22 @@ body {
 /* --------- HERO ----------------------------------------- */
 
 .hero {
-  background-color: #7e8291;
+  /* background-color: #7e8291; */
 }
+
+.hero-container {
+  display: flex;
+}
+
+.hero-wrap {
+  background-color: #7e8291;
+  flex-grow: 1;
+  /* padding: 272px 526px 208px 100px; */
+  padding: 272px 100px 208px 100px;
+}
+
 .hero-list {
+  width: 100px;
 }
 /* .list {
 } */
@@ -178,15 +228,17 @@ body {
 
 /* .link {
 } */
+
 .hero-top-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36; /* 15px */
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
-  
+
   margin-bottom: 20px;
 }
+
 .hero-title {
   font-family: "Raleway", sans-serif; /*+ sans-serif */
   /* font-style: normal; */
@@ -205,6 +257,8 @@ body {
   line-height: 1.66; /* 30px*/
   letter-spacing: 0.02em;
   color: #9da4bd;
+
+  max-width: 360px;
 }
 
 /* --------- ABOUT ----------------------------------------- */
@@ -214,27 +268,44 @@ body {
   padding-bottom: 120px;
 } */
 
-.about-list {
+.about-container {
+  display: flex;
+  gap: 30px;
 }
+
+.about-wrap {
+  padding-right: 100px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
 /* .list {
 } */
 .about-item {
 }
+
 .about-top-text {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36; /* 15px*/
-  text-transform: uppercase;
+  /* font-weight: 600; */
+  /* font-size: 11px; */
+  /* line-height: 1.36;  */
+  /* 15px*/
+  /* text-transform: uppercase; */
   color: #303030;
+  margin-bottom: 20px;
 }
 .about-title {
   font-family: "Raleway", sans-serif; /* + sans-serif*/
   /* font-style: normal;
   font-weight: 700; */
-  font-size: 42px;
-  line-height: calc(49 / 42); /* 49px*/
-  letter-spacing: 0.05em;
+  /* font-size: 42px; */
+  /* line-height: calc(49 / 42);  */
+  /* 49px*/
+  /* letter-spacing: 0.05em; */
   color: var(--second-tittle-color); /*  #303030*/
+  margin-bottom: 20px;
 }
 .about-bottom-text {
   /* font-weight: 400; */
@@ -242,6 +313,7 @@ body {
   line-height: 1.67; /* 30px*/
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 20px;
 }
 .about-text {
   /* font-family: "Open Sans";
@@ -251,6 +323,7 @@ body {
   line-height: 1.86; /*26px*/
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 42px;
 }
 .about-btn {
   /* font-family: "Open Sans"; */
@@ -279,6 +352,7 @@ body {
   line-height: 1.38; /*15px*/
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .prices-title {
   font-family: "Raleway", sans-serif; /* + sans-serif*/
@@ -288,13 +362,32 @@ body {
   line-height: 1.17; /*49px*/
   letter-spacing: 0.05em;
   color: #ffffff;
+  margin-bottom: 44px;
 }
+
+.prices-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
 .prices-list {
+  border: 1px solid white;
+  width: calc((100%-30px) / 2);
+  padding: 30px 20px;
 }
 .list {
 }
 .prices-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
+
+.prices-item:last-child {
+  margin-bottom: 0;
+}
+
 .prices-item-text {
   /* font-family: "Open Sans";
   font-style: normal; */
@@ -315,6 +408,9 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer; /***/
+
+  display: block;
+  margin: 0 auto;
 }
 
 /* --------- BENEFIT ----------------------------------------- */
@@ -395,19 +491,25 @@ body {
 }
 .barbers-top-text {
   color: #303030;
+  margin-bottom: 20px;
 }
+
 /* .top-text {
 } */
 .barbers-title {
   color: var(--second-tittle-color);
+  margin-bottom: 44px;
 }
 /* .title {
 } */
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
 /* .list {
 } */
 .barbers-item {
+  width: calc((100% - 60px)/3);
 }
 .barbers-subtitle {
   font-weight: 400;
@@ -424,4 +526,20 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ff6c00;
+}
+
+/* --------- GALLERY ----------------------------------------- */
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+   gap: 50px 30px;
+  /* row-gap: 50px;
+  column-gap: 30px; */
+}
+
+.gallery-list li {
+  width: calc((100% - 90px) / 4);
+  /* flex-basis: calc((100% - 90px) / 4); */
 }
