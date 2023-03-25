@@ -1,0 +1,545 @@
+:root {
+  --main-title-color: #ffffff;
+  --second-tittle-color: #303030;
+
+  --main-btn-color: #ffffff;
+  --second-btn-color: #303030;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /*letter-spacing: 0.1em;*/ /* + Mod2-1*/
+}
+
+/* font-family: 'Raleway', sans-serif; */
+
+/*  list temp  */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px; /*1170px*/
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+/* for example styles buttom without color*/
+.btn {
+  min-width: 160px;
+  height: 40px;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  /* color: #ffffff; */
+  cursor: pointer;
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.17; /*49px*/
+  letter-spacing: 0.05em;
+}
+
+.top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* --------- HEADER ----------------------------------------- */
+
+.link {
+  text-decoration: none;
+}
+
+/* eCSStractor for VSCode */
+.header {
+  background-color: gray;
+  padding-top: 32px;
+}
+
+/* .header .container {} */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-logo {
+  margin-right: 130px;
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* gap: 30px;  in .header-list */
+/* .header-item {
+  margin-right: 30px;
+}
+.header-item:last-child {
+  margin-right: 0;
+}  */
+
+/* так проблема */
+/* .header-item:not(:last-child) {
+  margin-right: 30px;
+  background-color: tomato;
+} */
+
+.header-link {
+  /* font-family: 'Open Sans'; */
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  /* line-height: 16px; */
+  line-height: 1.33; /* */
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #ff6c00;
+}
+/* .header-link:is(:hover,:focus) {
+  color: #ff6c00;
+} */
+/* .header-link:focus {
+  color: #ff6c00;
+} */
+
+.header-phone {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /*16px */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-right: 44px;
+}
+
+/* UP .btn for example styles buttom without color*/
+.header-btn {
+  /*font-family: "Open Sans", sans-serif;*/ /* + sans-serif */
+  font-family: inherit;
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /* 16px */
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer; /* + */
+}
+
+/* --------- HERO ----------------------------------------- */
+
+.hero {
+  /* background-color: #7e8291; */
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-wrap {
+  background-color: #7e8291;
+  flex-grow: 1;
+  /* padding: 272px 526px 208px 100px; */
+  padding: 272px 100px 208px 100px;
+}
+
+.hero-list {
+  width: 100px;
+}
+/* .list {
+} */
+
+.hero-item {
+}
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /* 15px */
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.hero-link:is(:hover, :focus) {
+  color: #ff6c00;
+}
+
+/* .link {
+} */
+
+.hero-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /* 15px */
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif; /*+ sans-serif */
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  font-size: 72px;
+  line-height: 1.18; /*85px*/
+  letter-spacing: 0.05em;
+  color: var(--main-title-color, #ffffff); /* color: #ffffff; */
+
+  margin-bottom: 20px;
+}
+
+.hero-botton-text {
+  /* font-weight: 400; */
+  font-size: 18px;
+  line-height: 1.66; /* 30px*/
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+
+  max-width: 360px;
+}
+
+/* --------- ABOUT ----------------------------------------- */
+
+/* .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+} */
+
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-wrap {
+  padding-right: 100px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* .list {
+} */
+.about-item {
+}
+
+.about-top-text {
+  /* font-weight: 600; */
+  /* font-size: 11px; */
+  /* line-height: 1.36;  */
+  /* 15px*/
+  /* text-transform: uppercase; */
+  color: #303030;
+  margin-bottom: 20px;
+}
+.about-title {
+  font-family: "Raleway", sans-serif; /* + sans-serif*/
+  /* font-style: normal;
+  font-weight: 700; */
+  /* font-size: 42px; */
+  /* line-height: calc(49 / 42);  */
+  /* 49px*/
+  /* letter-spacing: 0.05em; */
+  color: var(--second-tittle-color); /*  #303030*/
+  margin-bottom: 20px;
+}
+.about-bottom-text {
+  /* font-weight: 400; */
+  font-size: 18px;
+  line-height: 1.67; /* 30px*/
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 20px;
+}
+.about-text {
+  /* font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400; */
+  font-size: 14px;
+  line-height: 1.86; /*26px*/
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 42px;
+}
+.about-btn {
+  /* font-family: "Open Sans"; */
+  font-family: inherit;
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /*16px*/
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+  cursor: pointer; /*+*/
+}
+
+/* --------- PRICES ----------------------------------------- */
+
+.prices {
+  background-color: #303030;
+
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+}
+.prices-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.38; /*15px*/
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+.prices-title {
+  font-family: "Raleway", sans-serif; /* + sans-serif*/
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  font-size: 42px;
+  line-height: 1.17; /*49px*/
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 44px;
+}
+
+.prices-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.prices-list {
+  border: 1px solid white;
+  width: calc((100%-30px) / 2);
+  padding: 30px 20px;
+}
+.list {
+}
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+  margin-bottom: 0;
+}
+
+.prices-item-text {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67; /*30px*/
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-btn {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-family: inherit; /*+*/
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /*16px*/
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer; /***/
+
+  display: block;
+  margin: 0 auto;
+}
+
+/* --------- BENEFIT ----------------------------------------- */
+
+.benefits {
+}
+.benefits-list {
+}
+/* .list {
+} */
+.benefits-item {
+}
+/* .count {
+} */
+.benefits-item .count {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42); /*57px*/
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+/* for example - стилизация соседа с низу - stylization of the neighbor from the bottom*/
+.benefits-item .count + p {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /*15px*/
+  text-align: center;
+  color: #303030;
+}
+*/
+/*------------*/
+
+.benefits-item-text {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /*15px*/
+  text-align: center;
+  color: #303030;
+}
+.benefits-top-text {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /* 15px*/
+  text-transform: uppercase;
+  color: #303030;
+}
+.benefits-title {
+  font-family: "Raleway", sans-serif;
+  /* font-style: normal;
+  font-weight: 700; */
+  font-size: 42px;
+  line-height: 1.17; /*49px*/
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.benefits-botton-text {
+  /* font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400; */
+  font-size: 18px;
+  line-height: 1.67; /*30px*/
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* --------- BARBERS ----------------------------------------- */
+
+.barbers {
+}
+.barbers-top-text {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+/* .top-text {
+} */
+.barbers-title {
+  color: var(--second-tittle-color);
+  margin-bottom: 44px;
+}
+/* .title {
+} */
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+/* .list {
+} */
+.barbers-item {
+  width: calc((100% - 60px)/3);
+}
+.barbers-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18); /*25px*/
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.barbers-item-text {
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: calc(19 / 14); /*19px*/
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+/* --------- GALLERY ----------------------------------------- */
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+   gap: 50px 30px;
+  /* row-gap: 50px;
+  column-gap: 30px; */
+}
+
+.gallery-list li {
+  width: calc((100% - 90px) / 4);
+  /* flex-basis: calc((100% - 90px) / 4); */
+}
