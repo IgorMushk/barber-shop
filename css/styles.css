@@ -1,0 +1,368 @@
+:root {
+  --main-title-color: #ffffff;
+  --second-tittle-color: #303030;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /*letter-spacing: 0.1em;*/ /* + Mod2-1*/
+}
+
+/* font-family: 'Raleway', sans-serif; */
+
+/*  list temp  */
+.list {
+  list-style: none;
+}
+
+/* for example styles buttom without color*/
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  /* color: #ffffff; */
+  cursor: pointer;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.17; /*49px*/
+  letter-spacing: 0.05em;
+}
+
+.top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+/* --------- HEADER ----------------------------------------- */
+
+.link {
+  text-decoration: none;
+}
+
+/* eCSStractor for VSCode */
+.header {
+  background-color: gray;
+}
+.header-navigation {
+}
+.header-logo {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  /* font-family: 'Open Sans'; */
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  /* line-height: 16px; */
+  line-height: 1.33; /* */
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #ff6c00;
+}
+/* .header-link:is(:hover,:focus) {
+  color: #ff6c00;
+} */
+/* .header-link:focus {
+  color: #ff6c00;
+} */
+
+.header-phone {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /*16px */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* UP .btn for example styles buttom without color*/
+.header-btn {
+  /*font-family: "Open Sans", sans-serif;*/ /* + sans-serif */
+  font-family: inherit;
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /* 16px */
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer; /* + */
+}
+
+/* --------- HERO ----------------------------------------- */
+
+.hero {
+  background-color: #7e8291;
+}
+.hero-list {
+}
+/* .list {
+} */
+
+.hero-item {
+}
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /* 15px */
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.hero-link:is(:hover, :focus) {
+  color: #ff6c00;
+}
+
+/* .link {
+} */
+.hero-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /* 15px */
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-family: "Raleway", sans-serif; /*+ sans-serif */
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  font-size: 72px;
+  line-height: 1.18; /*85px*/
+  letter-spacing: 0.05em;
+  color: var(--main-title-color, #ffffff); /* color: #ffffff; */
+}
+.hero-botton-text {
+  /* font-weight: 400; */
+  font-size: 18px;
+  line-height: 1.66; /* 30px*/
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* --------- ABOUT ----------------------------------------- */
+
+.about {
+}
+.about-list {
+}
+/* .list {
+} */
+.about-item {
+}
+.about-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /* 15px*/
+  text-transform: uppercase;
+  color: #303030;
+}
+.about-title {
+  font-family: "Raleway", sans-serif; /* + sans-serif*/
+  /* font-style: normal;
+  font-weight: 700; */
+  font-size: 42px;
+  line-height: calc(49 / 42); /* 49px*/
+  letter-spacing: 0.05em;
+  color: var(--second-tittle-color); /*  #303030*/
+}
+.about-bottom-text {
+  /* font-weight: 400; */
+  font-size: 18px;
+  line-height: 1.67; /* 30px*/
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-text {
+  /* font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400; */
+  font-size: 14px;
+  line-height: 1.86; /*26px*/
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-btn {
+  /* font-family: "Open Sans"; */
+  font-family: inherit;
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /*16px*/
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+  cursor: pointer; /*+*/
+}
+
+/* --------- PRICES ----------------------------------------- */
+
+.prices {
+  background-color: #303030;
+}
+.prices-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.38; /*15px*/
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+  font-family: "Raleway", sans-serif; /* + sans-serif*/
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  font-size: 42px;
+  line-height: 1.17; /*49px*/
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.prices-list {
+}
+.list {
+}
+.prices-item {
+}
+.prices-item-text {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67; /*30px*/
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-btn {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-family: inherit; /*+*/
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33; /*16px*/
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer; /***/
+}
+
+/* --------- BENEFIT ----------------------------------------- */
+
+.benefits {
+}
+.benefits-list {
+}
+/* .list {
+} */
+.benefits-item {
+}
+/* .count {
+} */
+.benefits-item .count {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42); /*57px*/
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+/* for example - стилизация соседа с низу - stylization of the neighbor from the bottom*/
+.benefits-item .count + p {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /*15px*/
+  text-align: center;
+  color: #303030;
+}
+*/
+/*------------*/
+
+.benefits-item-text {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /*15px*/
+  text-align: center;
+  color: #303030;
+}
+.benefits-top-text {
+  /* font-family: "Open Sans";
+  font-style: normal; */
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36; /* 15px*/
+  text-transform: uppercase;
+  color: #303030;
+}
+.benefits-title {
+  font-family: "Raleway", sans-serif;
+  /* font-style: normal;
+  font-weight: 700; */
+  font-size: 42px;
+  line-height: 1.17; /*49px*/
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.benefits-botton-text {
+  /* font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400; */
+  font-size: 18px;
+  line-height: 1.67; /*30px*/
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* --------- BARBERS ----------------------------------------- */
+
+.barbers {
+}
+.barbers-top-text {
+  color: #303030;
+}
+/* .top-text {
+} */
+.barbers-title {
+  color: var(--second-tittle-color);
+}
+/* .title {
+} */
+.barbers-list {
+}
+/* .list {
+} */
+.barbers-item {
+}
+.barbers-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18); /*25px*/
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.barbers-item-text {
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: calc(19 / 14); /*19px*/
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
